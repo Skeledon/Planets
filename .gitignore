@@ -70,3 +70,5 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/Rewired/Internal/Assets/Extras/TouchControls.zip
+Assets/Rewired/Internal/Assets/Extras/TouchControls.zip.meta
