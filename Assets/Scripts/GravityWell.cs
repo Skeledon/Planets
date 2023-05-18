@@ -48,12 +48,22 @@ public class GravityWell : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log(collision.name + " entered gravity well");
-        _gravityObjectsInWell.Add(collision.GetComponent<GravityObject>());
+        GravityObject go;
+        if (collision.TryGetComponent<GravityObject>(out go))
+        {
+            _gravityObjectsInWell.Add(go);
+            go.AddWell(this);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log(collision.name + " left gravity well");
-        _gravityObjectsInWell.Remove(collision.GetComponent<GravityObject>());
+        GravityObject go;
+        if (collision.TryGetComponent<GravityObject>(out go))
+        {
+            _gravityObjectsInWell.Remove(go);
+            go.RemoveWell(this);
+        }
     }
 }

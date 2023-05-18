@@ -31,7 +31,7 @@ Transform:
   - {fileID: 146705652508810072}
   - {fileID: 4116088806095211140}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4573628134597693684
 GameObject:
@@ -43,7 +43,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4116088806095211140}
   - component: {fileID: 8543853342210529614}
-  m_Layer: 0
+  - component: {fileID: 760358550967193114}
+  m_Layer: 8
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,9 +104,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1288483167
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -117,6 +118,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &760358550967193114
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4573628134597693684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &8632872263191299452
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +165,7 @@ GameObject:
   - component: {fileID: 2374029819233981649}
   - component: {fileID: 531933214151526149}
   - component: {fileID: 8281356828733551770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GravityWell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,9 +234,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780362da00c86c84797cfe01f030b706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mass: 10000
-  _maxGravityForce: 15
-  _coreSize: 0
+  _collider: {fileID: 2374029819233981649}
+  _mass: 15000
+  _gravityForceBounds: {x: 1, y: 25}
+  _coreSize: 25
+  _gravityCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -2.4214041
+      outSlope: -2.4214041
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.054553933
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0.016379459
+      outSlope: 0.016379459
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.10560697
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!50 &8281356828733551770
 Rigidbody2D:
   serializedVersion: 4

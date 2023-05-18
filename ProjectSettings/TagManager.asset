@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Ship
+  - Bullet
+  - SpaceObject
   - 
   - 
   - 
@@ -41,6 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1288483167
+    locked: 0
   - name: Player
     uniqueID: 2980969333
+    locked: 0
+  - name: Overlay
+    uniqueID: 1129901961
     locked: 0
