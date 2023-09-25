@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2155811155210062555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4527918527767007949}
+  - component: {fileID: 6752552959544502301}
+  m_Layer: 0
+  m_Name: SunSystemGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4527918527767007949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155811155210062555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -83.32157, y: 128.20555, z: -0.05214171}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6752552959544502301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155811155210062555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ec6a3b6e2bd8d40bde8ebe0b835796, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sunPrefab: {fileID: 3002513411023797514, guid: e834afa46a4031a41bb592751be42fb7, type: 3}
+  _planetPrefab: {fileID: 2477978298448719045, guid: f58287a6dd8378d49bfe5d6607deaf45, type: 3}
+  _workholePrefab: {fileID: 0}
+  _orbitsBounds:
+  - {x: 80, y: 120}
+  - {x: 170, y: 230}
+  - {x: 270, y: 330}
+  - {x: 360, y: 440}
+  - {x: 460, y: 540}
+  - {x: 560, y: 640}
+  - {x: 660, y: 740}
+  _numberOfPlanets: {x: 3, y: 7}

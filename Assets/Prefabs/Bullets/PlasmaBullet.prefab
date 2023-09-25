@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: _impulseForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7494435203484332375, guid: 5e4ca01d9f37ba14ca62e83184e80f40, type: 3}
+      propertyPath: _timer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -66,4 +66,20 @@ public class GravityWell : MonoBehaviour
             go.RemoveWell(this);
         }
     }
+
+    public void UpdateGravityRadius()
+    {
+        _gravityRadius = _collider.radius - _coreSize;
+    }
+
+    public void SetCoreSize(float value)
+    {
+        _coreSize = value;
+        UpdateGravityRadius();
+    }
+
+    public void SetGravityForceBounds(Vector2 value)
+    {
+        _gravityForceBounds = value;
+    }
 }
