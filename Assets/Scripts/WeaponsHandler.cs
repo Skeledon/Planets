@@ -8,11 +8,21 @@ public class WeaponsHandler : MonoBehaviour
     private GameObject _owner;
 
     [SerializeField]
+    private GameObject[] _weapons_slots;
+
     private List<Weapon> _weapons = new List<Weapon>();
 
     // Start is called before the first frame update
     void Start()
     {
+        foreach(GameObject go in _weapons_slots) 
+        {
+            Weapon w = go.GetComponentInChildren<Weapon>();
+            if(w != null) 
+            {
+                _weapons.Add(w);
+            }
+        }
         //Debug
         foreach (var weapon in _weapons)
         {

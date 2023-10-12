@@ -81,6 +81,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5077807455967721499, guid: 5e4ca01d9f37ba14ca62e83184e80f40, type: 3}
+      propertyPath: _recoil
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5077807455967721499, guid: 5e4ca01d9f37ba14ca62e83184e80f40, type: 3}
       propertyPath: _impulseForce
       value: 15
       objectReference: {fileID: 0}

@@ -12,12 +12,18 @@ public class GravityObjectInitializer : MonoBehaviour
 
     [SerializeField]
     private AnimationCurve _sizeConvertionCurve;
+    [SerializeField]
+    private Vector2 _sizeBounds;
 
     [SerializeField]
     private AnimationCurve _gravityWellSizeConvertionCurve;
+    [SerializeField]
+    private Vector2 _gravityWellSizeBounds;
 
     [SerializeField]
     private AnimationCurve _gravityWellForceConvertionCurve;
+    [SerializeField]
+    private Vector2 _gravityWellForceBounds;
 
     [SerializeField]
     private Gradient _colors;
@@ -37,6 +43,7 @@ public class GravityObjectInitializer : MonoBehaviour
     {
         //Set object size
         float sizeValue = _sizeConvertionCurve.Evaluate(coeff);
+        sizeValue = (_sizeBounds.y - _sizeBounds.x) * sizeValue + _sizeBounds.x;
         _VisualObject.transform.localScale = new Vector3(sizeValue, sizeValue, 1);
         _gravityWellObject.GetComponent<GravityWell>().SetCoreSize(sizeValue / 2);
 
@@ -44,8 +51,13 @@ public class GravityObjectInitializer : MonoBehaviour
         _VisualObject.GetComponent<SpriteRenderer>().color = _colors.Evaluate(coeff);
 
         //set gravity values
-        _gravityWellObject.GetComponent<GravityWell>().SetGravityForceBounds(new Vector2(1, _gravityWellForceConvertionCurve.Evaluate(coeff)));
-        _gravityWellObject.GetComponent<CircleCollider2D>().radius = _gravityWellSizeConvertionCurve.Evaluate(coeff);
+        float gravityForce = _gravityWellForceConvertionCurve.Evaluate(coeff);
+        gravityForce = (_gravityWellForceBounds.y - _gravityWellForceBounds.x) * gravityForce + _gravityWellForceBounds.x;
+        _gravityWellObject.GetComponent<GravityWell>().SetGravityForceBounds(new Vector2(1,gravityForce));
+
+        float gravityRadius = _gravityWellSizeConvertionCurve.Evaluate(coeff);
+        gravityRadius = (_gravityWellSizeBounds.y - _gravityWellSizeBounds.x) * gravityRadius + _gravityWellSizeBounds.x;
+        _gravityWellObject.GetComponent<CircleCollider2D>().radius = gravityRadius;
         _gravityWellObject.GetComponent<GravityWell>().UpdateGravityRadius(); //needs to be called to update values correctly
     }
 }

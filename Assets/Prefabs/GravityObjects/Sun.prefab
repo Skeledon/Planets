@@ -57,6 +57,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _sizeBounds.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _sizeBounds.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _colors.ctime1
       value: 9830
       objectReference: {fileID: 0}
@@ -145,6 +153,22 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeBounds.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeBounds.y
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceBounds.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceBounds.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -170,31 +194,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[0].value
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[1].value
-      value: 25
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[2].value
-      value: 40
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[3].value
-      value: 65
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[4].value
-      value: 85
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[5].value
-      value: 120
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[0].inSlope
@@ -202,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[1].inSlope
-      value: 66.666664
+      value: 1.3333333
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[2].inSlope
@@ -210,7 +234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[3].inSlope
-      value: 41.73623
+      value: 0.5008347
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[4].inSlope
@@ -218,15 +242,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[5].inSlope
-      value: 140.56224
+      value: 0.6024095
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[0].outSlope
-      value: 66.666664
+      value: 1.3333333
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[1].inWeight
@@ -242,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[2].outSlope
-      value: 41.73623
+      value: 0.5008347
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[3].inWeight
@@ -258,7 +282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[4].outSlope
-      value: 140.56224
+      value: 0.6024095
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _sizeConvertionCurve.m_Curve.Array.data[5].inWeight
@@ -314,43 +338,307 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].time
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].time
+      value: 0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[3].time
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].time
+      value: 0.751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[5].time
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].time
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].time
+      value: 0.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[3].time
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].time
+      value: 0.751
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[5].time
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[0].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].value
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[3].value
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].value
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[5].value
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[0].value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].value
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].value
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[3].value
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].value
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[5].value
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[0].inSlope
+      value: 66.666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].inSlope
+      value: 1.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].inSlope
+      value: -6.7379365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[3].inSlope
+      value: 0.5008347
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].inSlope
+      value: 174.77216
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[5].inSlope
+      value: 0.6024095
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[0].inSlope
+      value: 66.666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].inSlope
+      value: 1.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].inSlope
+      value: -6.7379365
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[3].inSlope
+      value: 0.5008347
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].inSlope
+      value: 174.77216
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[5].inSlope
+      value: 0.6024095
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[0].outSlope
+      value: 1.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].outSlope
+      value: 19.215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].outSlope
+      value: 0.5008347
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[3].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].outSlope
+      value: 0.6024095
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[5].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[5].outSlope
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[0].outSlope
+      value: 1.3333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].outSlope
+      value: 19.215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].outSlope
+      value: 0.5008347
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[3].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].outSlope
+      value: 0.6024095
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[5].inWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[5].outSlope
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[3].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[0].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[3].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[0].tangentMode
-      value: 34
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[1].tangentMode
-      value: 34
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[2].tangentMode
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[3].tangentMode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[4].tangentMode
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellSizeConvertionCurve.m_Curve.Array.data[5].tangentMode
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[0].tangentMode
-      value: 34
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[1].tangentMode
-      value: 34
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[2].tangentMode
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[3].tangentMode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[4].tangentMode
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5430187757594112531, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
+      propertyPath: _gravityWellForceConvertionCurve.m_Curve.Array.data[5].tangentMode
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8543853342210529614, guid: 57fccacd51f3a6c43868e1a0c4d6fb70, type: 3}
       propertyPath: m_Color.b

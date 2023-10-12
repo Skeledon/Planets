@@ -35,7 +35,7 @@ public class SunSystemGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.G))
         {
             foreach(GameObject go in _gravityObjects)
                 Destroy(go);
@@ -61,7 +61,7 @@ public class SunSystemGenerator : MonoBehaviour
 
         for(int i = 0; i < numberOfPlanets; i++)
         {
-            Vector2 direction = Random.insideUnitCircle;
+            Vector2 direction = Random.insideUnitCircle.normalized;
             CreatePlanet(direction *= Random.Range(_orbitsBounds[i].x, _orbitsBounds[i].y));
         }
     }

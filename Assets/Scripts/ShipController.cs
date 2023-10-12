@@ -32,10 +32,16 @@ public class ShipController : MonoBehaviour
 
     public int MaxHP;
 
+    public float ThrustForce { get {  return _thrust; } }
+
     private float _currentThrust;
     private bool _thrustApplied;
 
+    private Vector2 _currentTotalForces;
+
     private WeaponsHandler _weaponsHandler;
+
+    private List<Vector2> _forcesToApply = new List<Vector2>();
 
     public delegate void ShipDestroyedDelegate();
     public event ShipDestroyedDelegate ShipDestroyed;
@@ -62,16 +68,26 @@ public class ShipController : MonoBehaviour
         if (!_thrustApplied)
             _backFire.SetActive(false);
         _thrustApplied = false;
+
+        foreach(Vector2 f in _forcesToApply)
+        {
+            _rigidBody.AddForce(f,ForceMode2D.Force);
+        }
+        _currentTotalForces = _rigidBody.totalForce;
+        _forcesToApply.Clear();
     }
 
     public void ApplyThrust()
     {
         Vector2 force = transform.up;
-        Vector2 velocty = _rigidBody.velocity;
+        Vector2 velocity = _rigidBody.velocity;
         force *= _thrust;
-        float velocityCoeff = Mathf.Clamp(velocty.magnitude / _maxSpeed, 0 , 1);
-        _rigidBody.AddForce(force, ForceMode2D.Force);
-        _rigidBody.AddForce(-velocty.normalized * velocityCoeff * _thrust, ForceMode2D.Force);
+        float velocityCoeff = Mathf.Clamp(velocity.magnitude / _maxSpeed, 0 , 1);
+        //Add thrust
+        _forcesToApply.Add(force);
+        //Add counterforce
+        _forcesToApply.Add(_thrust * velocityCoeff * -velocity.normalized);
+
         _thrustApplied = true;
         _backFire.SetActive(true);
     }
@@ -104,4 +120,10 @@ public class ShipController : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    private void DrawForces()
+    {
+
+    }
+
 }

@@ -41,7 +41,7 @@ public class GravityWell : MonoBehaviour
             float distance = direction.magnitude - _coreSize;
             float coeff = distance / _gravityRadius;
             float forceMagnitude = _gravityForceBounds.x + (_gravityCurve.Evaluate(coeff) * (_gravityForceBounds.y - _gravityForceBounds.x));
-            gravityObject.ApplyGravity(direction.normalized * Mathf.Clamp(forceMagnitude, _gravityForceBounds.x, _gravityForceBounds.y));
+            gravityObject.ApplyGravity(this, direction.normalized * Mathf.Clamp(forceMagnitude, _gravityForceBounds.x, _gravityForceBounds.y));
         }
     }
 

@@ -54,18 +54,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _sizeBounds: {x: 0, y: 0}
   _gravityWellSizeConvertionCurve:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _gravityWellSizeBounds: {x: 0, y: 0}
   _gravityWellForceConvertionCurve:
     serializedVersion: 2
     m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  _gravityWellForceBounds: {x: 0, y: 0}
   _colors:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
@@ -305,22 +308,22 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.0023880005
       value: 1
-      inSlope: -2.4214041
-      outSlope: -2.4214041
+      inSlope: -18.520744
+      outSlope: -18.520744
       tangentMode: 0
-      weightedMode: 0
+      weightedMode: 3
       inWeight: 0
-      outWeight: 0.054553933
+      outWeight: 0.055564784
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0.016379459
-      outSlope: 0.016379459
+      inSlope: -0.06440539
+      outSlope: -0.06440539
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.10560697
+      weightedMode: 3
+      inWeight: 0.43519062
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

@@ -8,6 +8,9 @@ public class Bullet : MonoBehaviour
     private float _impulseForce;
 
     [SerializeField]
+    float _recoil;
+
+    [SerializeField]
     private int _damage;
 
     [SerializeField]
@@ -33,6 +36,7 @@ public class Bullet : MonoBehaviour
         _owner = owner;
         _rigidbody.velocity = startingVelocity;
         _rigidbody.AddForce(transform.up * _impulseForce, ForceMode2D.Impulse);
+        _owner.GetComponent<Rigidbody2D>().AddForce(-transform.up * _recoil, ForceMode2D.Impulse);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
